@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 
-.header{
+.top-section .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,48 +25,54 @@ body {
     justify-content: space-between;
 }
 
-.hero .img{
+.top-section .img{
     height: auto;
     width: 350px;
 }
 
-.text {
+.top-section .text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.links {
+.top-section .links {
     display: flex;
     list-style-type: none;
     gap: 20px;
 }
 
-.header a {
+.top-section a {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.main {
+.top-section .main {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
-.secondary {
+.top-section .secondary {
     font-size: 18px;
     color: #E5E7EB;
     max-width: 400px;
 }
 
-.sign-up {
+.top-section .sign-up, .call-to-action .sign-up {
     background-color: #3882F6;
     color: white;
+    font-size: 18px;
     font-weight: bold;
-    max-width: 120px;
-    padding: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
+    padding: 7px;
+    max-width: 130px;
+}
+
+.call-to-action .sign-up {
+    border: 2px solid white;
+    width: 130px;
 }
 
 .info {
@@ -83,20 +89,75 @@ body {
     color: #1F2937;
 }
 
-.gallery {
+.info .gallery {
     display: flex;
     align-items: center;
     gap: 48px;
 }
 
-.gallery img {
+.info img {
     width: 200px;
     height: auto;
     border: 4px solid blue;
     border-radius: 15px;
 }
 
-.gallery .subtext{
+.info .subtext{
     max-width: 200px;
     text-align: center;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 96px;
+}
+
+.quote-section .quote{
+    max-width: 800px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-section .quotee {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.quote-section .quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.call-to-action .container {
+    background-color: #3882F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 155px;
+    border-radius: 10px;
+    padding: 50px 120px;
+}
+
+.call-to-action .title {
+    font-weight: bolder;
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.call-to-action .subtext {
+    color: #F9FAF8;
+    font-size: 20px;
 }
